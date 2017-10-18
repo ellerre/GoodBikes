@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4531AC97-B52A-4B83-B13B-50E7862885EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoodBikes</RootNamespace>
+    <AssemblyName>GoodBikes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\Adapter.cs" />
+    <Compile Include="Adapters\AAdapted.cs" />
+    <Compile Include="Adapters\ElementoAdapted.cs" />
+    <Compile Include="Adapters\ElementoNoleggioAdapted.cs" />
+    <Compile Include="Adapters\NoleggioAdapted.cs" />
+    <Compile Include="Logged.cs" />
+    <Compile Include="Presentation\FilterPresenter.cs" />
+    <Compile Include="Presentation\GestioneAgevolazioniPresenter.cs" />
+    <Compile Include="Presentation\GestioneTipologieElementiPresenter.cs" />
+    <Compile Include="Presentation\LoginFormPresenter.cs" />
+    <Compile Include="Presentation\ChiusuraNoleggioPresenter.cs" />
+    <Compile Include="Presentation\EditingControlPresenter.cs" />
+    <Compile Include="Presentation\EditingDialogPresenter.cs" />
+    <Compile Include="Presentation\EditingDocument.cs" />
+    <Compile Include="Presentation\EditingProperty.cs" />
+    <Compile Include="Presentation\GestioneElementiPresenter.cs" />
+    <Compile Include="Presentation\GestioneNoleggioPresenter.cs" />
+    <Compile Include="Presentation\ITabPresenter.cs" />
+    <Compile Include="Presentation\MainFormMenuPresenter.cs" />
+    <Compile Include="Presentation\MainFormPresenter.cs" />
+    <Compile Include="Presentation\TabPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presentation\GestioneDipendentiPresenter.cs" />
+    <Compile Include="Services\Attributes\AdminAttribute.cs" />
+    <Compile Include="Services\Attributes\DipendenteAttribute.cs" />
+    <Compile Include="Services\Attributes\MenuItemAttribute.cs" />
+    <Compile Include="Services\CommandManager.cs" />
+    <Compile Include="Services\CommandManagerHandlers.cs" />
+    <Compile Include="Services\CommandManagerHandlersInit.cs" />
+    <Compile Include="Services\NoleggioServices.cs" />
+    <Compile Include="Services\NoleggioServicesAdmin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\NoleggioServicesDipendente.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\NoleggioServicesNI.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3ac6956b-b7f5-4997-80cb-38e0f77b7982}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System2\System2.csproj">
+      <Project>{59f5ab66-5387-4be3-a007-6cd14ace680e}</Project>
+      <Name>System2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\View\View.csproj">
+      <Project>{1cc28f25-1f13-485d-ac1c-97c40bbebbfa}</Project>
+      <Name>View</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

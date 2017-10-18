@@ -1,0 +1,14 @@
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\GoodBikes.exe.config
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\GoodBikes.exe
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\GoodBikes.pdb
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\Model.dll
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\System2.dll
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\View.dll
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\Model.pdb
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\System2.pdb
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\bin\Release\View.pdb
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\obj\Release\GoodBikes.csprojResolveAssemblyReference.cache
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\obj\Release\GoodBikes.Properties.Resources.resources
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\obj\Release\GoodBikes.csproj.GenerateResource.Cache
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\obj\Release\GoodBikes.exe
+C:\Users\maura\Source\Workspaces\GoodBikes\GoodBikesSolution\GoodBikes\obj\Release\GoodBikes.pdb
